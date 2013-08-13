@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @content_form.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @content_form.content %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @content_form.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_content_form_path(@content_form) %> |
+<%= link_to 'Back', content_forms_path %> |
+<%= link_to 'Download Course Content', content_form_path(@content_form, format: "pdf") %>
